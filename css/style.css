@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto&display=swap');
+*{
+	font-family: 'Belanosima', sans-serif;
+}
+
+body{
+	background: #3c424b;
+}
+
+.bg-image {
+	z-index: 1;
+	background-image: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	height: 250px;
+  
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+
+.navbar{
+	margin-top: 10px;
+  	position: fixed;
+	transition: 1s;
+}
+
+.navbar-brand{
+	color: #fff;
+	font-size: 45px;
+	margin-top: 0;
+	cursor: pointer;
+}
+.navbar-brand:hover{
+	color:#1bb76e;
+}
+
+.navbar-toggle{
+	margin-top: 0;
+	padding: 1.2rem;
+}
+.navbar-newpost{
+	padding: 1rem;
+	float: left;
+	margin-left: 30px;
+	margin-top: 3px;
+	background-color: #1bb76e;
+	border-radius: 3px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+.navbar-newpost:hover{
+	background-color: #20d681;
+	color: white;
+	text-decoration: none;
+}
+
+.icon-bar{
+  	background-color: #000;
+}
+
+.nav{
+	font-family: Lithos Pro;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+.nav li{
+	align-items: center;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.underline:after{
+	content: '';
+	display: block;
+	border-bottom: 2px solid #8787875e;
+	transform: scaleX(0);
+	transition: .2s ease-in-out;
+}
+
+.underline:hover:after{
+	transform: scaleX(1);
+}
+.search {
+	background-color: rgba(255,255,255,.25);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid transparent;
+	color: white;
+	border-radius: 3px;
+
+	margin: 0 0.5rem;
+}
+
+
+
+.para{
+	min-height: 500px;
+}
+
+.para h3{
+	text-align: center;
+	margin-top: 15%;
+	color: #fff;
+	font-family: nyala;
+	font-size: 44px;
+}
+
+body::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar{
+	width: 14px;
+}
+
+body::-webkit-scrollbar-thumb{
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+	background: #3c424b;
+}
+@media(max-width: 720px){
+	.navbar-collapse{
+		background: #3c424b;
+	}
+	.para{
+		min-height: 800px;
+	}
+}
