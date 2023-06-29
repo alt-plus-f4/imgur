@@ -1,5 +1,8 @@
-https://codepen.io/sonorangirl/pen/XmRBjq -- navbar
-
 https://www.youtube.com/watch?v=s5bUlkZCXN0 -- PHP board
-
 https://imgur.com/ -- the site itself
+
+
+New post button, 
+sign in,
+register, 
+random image;

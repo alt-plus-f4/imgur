@@ -7,20 +7,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>IMGUR</title>
-		<meta name="author" content="Codeconvey" />
+		<meta name="author" content="Valentain" />
 		
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		
 </head>
 <body>
 
 
-<!-- NAVBAR-->
-<section> 
+<div id="preloader">
+	<img src="images/preloader.gif"/>
+</div>	
 
-<div class="bg-image"></div>
+<div id="popup-screen">
+	<div class="popup-box">
+	  <a class="close-btn">X</a>
+	  <h2>Enter Title:</h2>
+	  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio corporis obcaecati fugiat nam harum commodi quasi eaque accusamus, blanditiis illo dicta fuga totam aliquid voluptates. Eaque explicabo nam mollitia.</p>
+	</div>
+</div>
+
+
+<!-- NAVBAR-->
+<section id="navSection" class="navbar-section"> 
 
 <div class="navbar navbar-fixed-top container-fluid" id="navbar">
 		 <div class="navbar-header">
@@ -30,33 +41,89 @@
 				<span class="icon-bar"></span>                        
 			</button>
 			<a class="navbar-brand">TUES</a>
-			<a class="navbar-newpost">+ NEW POST</a>
+			<a class="navbar-newpost" onclick="newPost();">+ NEW POST</a>
 		</div>
 		<div class="collapse navbar-right navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li>
-					<input class="search" type="text" placeholder="Search..">
+					<form action="/" method="GET" class="form">
+						<input class="search" type="text" placeholder="Search.."/>
+						<button type="submit" class="search-button">
+						  <img src="images/search.svg">
+						</button>
+					  </form>
+					
 				</li>
 				
-				<li class="underline">Login</li> <!-- TODO IF THE PERSON IS LOGGED IN SHOW HIS PFP -->
+				<li class="underline">Login</li> <!-- LOG -->
 				<li class="underline">Signup</li>
 			</ul>
 		</div>
+	</div>
+
+	<div class="navImage">
+		<!-- <h1>asd</h1> -->
+
 	</div>
 
 
 </section>
 
 <!-- MAIN IMAGES-->
-<section>
+<section class="images-section">
 
-<div class="images">
-
-	
+<!-- One image container -->
+<div class="imageContainer"> 
+	<img class="image color-loading" alt="Image" src="images/test.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">This is an example image</a>
+	</div>
+	<div class="postInfo">
+		<div class="upvoteContainer">
+			<img src="images/upvote.svg" class="upvote"/>
+			<p class="upvoteCount">69</p>
+		</div>
+		<div class="downvoteContainer">
+			<img src="images/downvote.svg" class="downvote"/>
+			<p class="downvoteCount">69</p>
+		</div>
+		<div class="commentContainer">
+			<img src="images/comment.svg" class="comment"/>
+			<p class="commentCount">42</p>
+		</div>
+	</div>
 </div>
-
-
-
+<!-- End -->
+<div class="imageContainer">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">asd</a>
+	</div>
+</div>
+<div class="imageContainer">
+	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">asd</a>
+	</div>
+</div>
+<div class="imageContainer">
+	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">asd</a>
+	</div>
+</div>
+<div class="imageContainer">
+	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">asd</a>
+	</div>
+</div>
+<div class="imageContainer">
+	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
+	<div class="postData">
+		<a class="postText">asd</a>
+	</div>
+</div>
 
 </section>
 		 
