@@ -368,19 +368,39 @@ body{
 	height: 250px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 .navImage h1{
 	font-size: 25px;
 	background: transparent;
 	color: #aed8ea;
-	margin-top: 15vh;
+	margin-top: 11vh;
+	width: 100%;
+	text-align: center;
 }
 
 .tagContainer{
-	background: url("https://i.imgur.com/9r1qCDq_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+	cursor: pointer;
 	height: 130px;
 	width: 170px;
-
+	text-align: center;
+	box-shadow: 0.2px 0.2px 6px black;
+	transition: 0.5s;
+	margin: 10px;
+}
+.tagContainer:hover{
+	filter: brightness(130%);
+	transition: 0.5s;
+}
+.tagText{
+	color: white;
+	text-decoration: none;
+}
+.tagText:hover{
+	color: white;
+	text-decoration: none;
 }
 
 .navSearch{
