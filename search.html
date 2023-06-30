@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,18 +14,17 @@
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/search.css">
+	
 		
 </head>
-
-
 <body>
 
-<!-- Preloader when it gets too much -->
+
 <div id="preloader">
 	<img src="images/preloader.gif"/>
 </div>	
 
-<!-- New post popup -->
 <div id="popup-screen">
 	<div class="popup-box">
 		<a class="close-btn">X</a>
@@ -39,22 +37,15 @@
 			<div class="data-input" id="data_input" style="display: none;">
 				<a>Enter data about the picture</a>
 				<input type="text" name="title" id="titleInput" style="display: inherit;" placeholder="Enter Title.">
-				
-				<button type="button" class="tagButton" id="fun"  onclick="btn_toggle_fun();"style="display: inherit;">fun</button>
-				<button type="button" class="tagButton" id="whole" onclick="btn_toggle_whole();" style="display: inherit;">wholesome</button>
-				<button type="button" class="tagButton" id="game" onclick="btn_toggle_game();" style="display: inherit;">gaming</button>
-
-
 				<button type="button" id="stateButton" style="display: inherit;">PUBLIC</button>
 				<input type="submit" onclick="submitPhoto();" value="Submit" id="submitButton" style="display: inherit;">
 			</div>
 		  </form>
 	</div>
 </div>
-<!-- End of new post popup -->
 
 <!-- NAVBAR-->
-<section id="navSection" class="navbar-section"> 
+<section id="navSection" class="navbar-section noback"> 
 
 <div class="navbar navbar-fixed-top container-fluid" id="navbar">
 		 <div class="navbar-header">
@@ -63,14 +54,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>                        
 			</button>
-			<a class="navbar-brand">TUES</a>
+			<a class="navbar-brand" href="/">TUES</a>
 			<a class="navbar-newpost" onclick="newPost();">+ NEW POST</a>
 		</div>
 		<div class="collapse navbar-right navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li>
 					<form action="/" method="GET" class="form">
-						<input class="search" type="text" placeholder="Search.."/>
+						<input class="search" type="text" placeholder="Search.."/> <!-- !PLACEHOLDER SEARCH-->
 						<button type="submit" class="search-button">
 						  <img src="images/search.svg">
 						</button>
@@ -83,78 +74,32 @@
 			</ul>
 		</div>
 	</div>
-	<div class="navImage">
-		<h1>The perfect site.</h1>
 
-		<div class="tagContainer">
-			<div class="tagData">
-				<a class="tagText">asd</a>
-			</div>
-		</div>
-
-
-	</div>
+	<div class="navImage navSearch"></div>
+    <div class="digging">
+        <h1>After a lot of digging I present what I found</h1>
+    </div>
+    
 
 
 </section>
-<!-- ENd of NAVBAR section-->
 
+<section class="result-section">
 
-<!-- MAIN IMAGES-->
-<section class="images-section">
-
-<!-- TEMPLATE image container -->
-<div class="imageContainer"> 
-	<img class="image color-loading" alt="Image" src="images/test.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">This is an example image</a>
-	</div>
-	<div class="postInfo">
-		<div class="upvoteContainer">
-			<img src="images/upvote.svg" class="upvote"/>
-			<p class="upvoteCount">69</p>
-		</div>
-		<div class="downvoteContainer">
-			<img src="images/downvote.svg" class="downvote"/>
-			<p class="downvoteCount">69</p>
-		</div>
-		<div class="commentContainer">
-			<img src="images/comment.svg" class="comment"/>
-			<p class="commentCount">42</p>
-		</div>
-	</div>
+<div class="result-Container">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="200"/>
 </div>
-<!-- End of TEMPLATE container -->
-
-<div class="imageContainer">
-	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">asd</a>
-	</div>
+<div class="result-Container">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="200"/>
 </div>
-<div class="imageContainer">
-	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">asd</a>
-	</div>
+<div class="result-Container">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="200"/>
 </div>
-<div class="imageContainer">
-	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">asd</a>
-	</div>
+<div class="result-Container">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="200"/>
 </div>
-<div class="imageContainer">
-	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">asd</a>
-	</div>
-</div>
-<div class="imageContainer">
-	<img class="image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="300"/>
-	<div class="postData">
-		<a class="postText">asd</a>
-	</div>
+<div class="result-Container">
+	<img class="image color-loading" alt="Image" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" width="200"/>
 </div>
 
 </section>
